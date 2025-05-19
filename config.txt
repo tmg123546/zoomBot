@@ -1,0 +1,18 @@
+meeting_number: "9990934593"
+clientID: "v_B3iAE1TTeeV2P_sKlI6A"
+clientSecret: "DMpsjhGJkV1Gq3vtJ0Gmy8W6fjxZnUDx"
+meeting_password: "XDW9nDjqwSLKMCkh3UVeBYfG4UnMcR"
+recording_token: ""
+GetVideoRawData: "false"
+GetAudioRawData: "true"
+SendVideoRawData: "false"
+SendAudioRawData: "true"
+
+create_vSpeaker: "pactl load-module module-null-sink sink_name=vspeaker sink_properties=device.description=virtual_speaker"
+create_vMic: "pactl load-module module-remap-source master=vspeaker.monitor source_name=vmic source_properties=device.description=virtual_mic"
+vSpeaker: "virtual_speaker"
+vMic: "virtual_mic"
+
+path_to_pythonVenv: "../../.clientVenv/bin/python3"
+path_to_client: "../../BetterAlexa/client/sendFile.py"
+path_to_client_folder: "../../BetterAlexa/client/"
